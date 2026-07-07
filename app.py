@@ -143,7 +143,9 @@ def customer_form(reference_df: pd.DataFrame) -> pd.DataFrame:
             else:
                 min_value, max_value = CUSTOMER_FEATURES[feature]
                 default_value = float(reference_df[feature].median()) if default_series is not None else float(min_value)
-                step = 1 if feature == "tenure" else 0.1
+                # All of number_input's numeric args must share one type; value/
+                # min/max are floats below, so keep step a float too (tenure steps by 1).
+                step = 1.0 if feature == "tenure" else 0.1
                 inputs[feature] = column.number_input(
                     feature,
                     min_value=float(min_value),
