@@ -9,7 +9,6 @@ __pycache__/
 *.pyd
 .Python
 
-data/Telco-Customer-Churn.csv
 data/*.parquet
 
 .streamlit/secrets.toml

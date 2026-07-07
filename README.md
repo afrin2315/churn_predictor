@@ -131,9 +131,9 @@ git remote add origin https://github.com/<your-username>/<your-repo-name>.git
 git push -u origin main
 ```
 
-The trained model bundle in `models/` is **committed** (it is not gitignored) so the
-deployed app can load it immediately. The raw dataset CSV is gitignored; the app
-re-downloads it from the IBM URL on first run for its SHAP background sample.
+The trained model bundle in `models/` and the dataset CSV in `data/` are both
+**committed** so the deployed app is fully self-contained — it loads the model and
+its SHAP background sample instantly with no runtime download.
 
 ## How to deploy on Streamlit Community Cloud (get a public live link)
 
@@ -144,7 +144,8 @@ re-downloads it from the IBM URL on first run for its SHAP background sample.
 4. Select your repository and branch (`main`), and set **Main file path** to `app.py`.
 5. Open **Advanced settings** and set **Python version to 3.11** — the pinned
    dependency versions (e.g. `numpy==1.26.4`) ship prebuilt wheels for 3.11, which
-   avoids slow/failing source builds on newer Python.
+   avoids slow/failing source builds on newer Python. (`packages.txt` installs
+   `libgomp1`, the OpenMP runtime XGBoost needs on Streamlit Cloud's Linux image.)
 6. Click **Deploy**. Streamlit installs `requirements.txt`, builds the app, and gives
    you a public URL like `https://<your-app-name>.streamlit.app`.
 7. Paste that URL back into the top of this README so recruiters can click straight
