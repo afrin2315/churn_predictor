@@ -1,0 +1,52 @@
+[
+  {
+    "feature": "tenure",
+    "shap_value": 1.1843279896164314,
+    "absolute_contribution": 1.1843279896164314
+  },
+  {
+    "feature": "Contract_Month-to-month",
+    "shap_value": 0.5814460281142965,
+    "absolute_contribution": 0.5814460281142965
+  },
+  {
+    "feature": "OnlineSecurity_No",
+    "shap_value": 0.2479669512854889,
+    "absolute_contribution": 0.2479669512854889
+  },
+  {
+    "feature": "InternetService_Fiber optic",
+    "shap_value": 0.2460191181767732,
+    "absolute_contribution": 0.2460191181767732
+  },
+  {
+    "feature": "PaymentMethod_Electronic check",
+    "shap_value": 0.22681954224361106,
+    "absolute_contribution": 0.22681954224361106
+  },
+  {
+    "feature": "MonthlyCharges",
+    "shap_value": 0.22416778925340622,
+    "absolute_contribution": 0.22416778925340622
+  },
+  {
+    "feature": "TechSupport_No",
+    "shap_value": 0.18237392981536688,
+    "absolute_contribution": 0.18237392981536688
+  },
+  {
+    "feature": "MultipleLines_No",
+    "shap_value": 0.1358645383678959,
+    "absolute_contribution": 0.1358645383678959
+  },
+  {
+    "feature": "TotalCharges",
+    "shap_value": 0.1150049677619245,
+    "absolute_contribution": 0.1150049677619245
+  },
+  {
+    "feature": "SeniorCitizen",
+    "shap_value": 0.11446801521000452,
+    "absolute_contribution": 0.11446801521000452
+  }
+]

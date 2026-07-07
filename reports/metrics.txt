@@ -1,0 +1,19 @@
+Customer Churn Predictor Metrics
+=================================
+
+Logistic Regression
+  ROC-AUC: 0.8413
+  Precision (churn): 0.5043
+  Recall (churn): 0.7834
+  F1 (churn): 0.6136
+
+XGBoost
+  ROC-AUC: 0.8468
+  Precision (churn): 0.5201
+  Recall (churn): 0.7941
+  F1 (churn): 0.6286
+  Average precision: 0.6631
+
+Best XGBoost params: {'model__colsample_bytree': 1.0, 'model__learning_rate': 0.05, 'model__max_depth': 3, 'model__min_child_weight': 5, 'model__n_estimators': 150, 'model__subsample': 0.8}
+Scale pos weight: 2.7686
+Saved model bundle: C:\Users\Fathma\Downloads\churn_predictor\models\churn_xgb_bundle.joblib
