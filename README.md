@@ -1,5 +1,9 @@
 # Customer Churn Predictor
 
+**🔗 Live demo:** https://churn-predictor-afrin.streamlit.app
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://churn-predictor-afrin.streamlit.app)
+
 An end-to-end machine-learning project that predicts customer churn for the IBM Telco Customer Churn dataset. The project includes data download, exploratory analysis, a baseline logistic regression model, a tuned XGBoost model, SHAP-based explainability, and a Streamlit app for live scoring.
 
 ## Project structure
